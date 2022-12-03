@@ -17,8 +17,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'EmotionChild', // Usually your GitHub org/user name.
-  projectName: 'Ellie-Patchnotes', // Usually your repo name.
+  organizationName: 'EllieBotDevs', // Usually your GitHub org/user name.
+  projectName: 'ellie-patchnotes', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -42,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EmotionChild/Ellie-Patchnotes/tree/dev/blog',
+            'https://github.com/EllieBotDevs/ellie-patchnotes/tree/dev/blog',
           blogTitle: 'Ellie patchnotes',
           blogDescription: 'Here you can find the patch notes for Ellie',
           postsPerPage: 'ALL',
@@ -69,7 +69,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/EmotionChild/Ellie-Patchnotes',
+            href: 'https://github.com/EllieBotDevs/ellie-patchnotes',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/EmotionChild/Ellie-Patchnotes',
+                href: 'https://github.com/EllieBotDevs/ellie-patchnotes',
               },
             ],
           },
