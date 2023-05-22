@@ -88,6 +88,10 @@ const config = {
               {
                 label: 'Ellie blog',
                 to: 'https://blog.elliebot.net',
+              },
+              {
+                label: 'Main site',
+                to: 'https://elliebot.net',
               }
             ],
           },
