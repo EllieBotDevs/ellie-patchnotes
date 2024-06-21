@@ -189,6 +189,13 @@ declare module 'astro:content' {
   collection: "releases";
   data: InferEntrySchema<"releases">
 } & { render(): Render[".md"] };
+"5.0.8-beta.md": {
+	id: "5.0.8-beta.md";
+  slug: "508-beta";
+  body: string;
+  collection: "releases";
+  data: InferEntrySchema<"releases">
+} & { render(): Render[".md"] };
 };
 
 	};
