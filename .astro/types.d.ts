@@ -189,9 +189,37 @@ declare module 'astro:content' {
   collection: "releases";
   data: InferEntrySchema<"releases">
 } & { render(): Render[".md"] };
-"5.0.8-beta.md": {
-	id: "5.0.8-beta.md";
-  slug: "508-beta";
+"5_0_8.md": {
+	id: "5_0_8.md";
+  slug: "5_0_8";
+  body: string;
+  collection: "releases";
+  data: InferEntrySchema<"releases">
+} & { render(): Render[".md"] };
+"5_1_0.md": {
+	id: "5_1_0.md";
+  slug: "5_1_0";
+  body: string;
+  collection: "releases";
+  data: InferEntrySchema<"releases">
+} & { render(): Render[".md"] };
+"5_1_1.md": {
+	id: "5_1_1.md";
+  slug: "5_1_1";
+  body: string;
+  collection: "releases";
+  data: InferEntrySchema<"releases">
+} & { render(): Render[".md"] };
+"5_1_2.md": {
+	id: "5_1_2.md";
+  slug: "5_1_2";
+  body: string;
+  collection: "releases";
+  data: InferEntrySchema<"releases">
+} & { render(): Render[".md"] };
+"5_1_3.md": {
+	id: "5_1_3.md";
+  slug: "5_1_3";
   body: string;
   collection: "releases";
   data: InferEntrySchema<"releases">
