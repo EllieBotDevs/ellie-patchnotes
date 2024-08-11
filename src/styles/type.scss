@@ -7,9 +7,11 @@ body {
 	font-size: 18px;
 	line-height: 1.65;
 	font-weight: 400;
+
 	@media (prefers-color-scheme: dark) {
 		color: color(gray, 200);
 	}
+
 	color: color(gray, 800);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -23,9 +25,11 @@ h4,
 h5 {
 	line-height: 1.2;
 	margin: 1em 0 0.5em 0;
+
 	@media (prefers-color-scheme: dark) {
 		color: $white;
 	}
+
 	color: color(gray, 950);
 	font-weight: 700;
 }
@@ -33,15 +37,19 @@ h5 {
 h1 {
 	font-size: 3.052em;
 }
+
 h2 {
 	font-size: 2.441em;
 }
+
 h3 {
 	font-size: 1.953em;
 }
+
 h4 {
 	font-size: 1.563em;
 }
+
 h5 {
 	font-size: 1.25em;
 }
@@ -58,8 +66,10 @@ b,
 strong {
 	font-weight: 700;
 	color: #fff;
+
 	@media (prefers-color-scheme: dark) {
 		color: $white;
 	}
+
 	color: color(gray, 950);
 }

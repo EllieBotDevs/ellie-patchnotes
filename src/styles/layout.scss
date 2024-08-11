@@ -12,9 +12,11 @@ body {
 	width: 1040px;
 	max-width: 100%;
 	background-color: $white;
+
 	@media (prefers-color-scheme: dark) {
-		background-color: color(purple, 950);
+		background-color: color(gray, 950);
 	}
+
 	@media (max-width: $tablet) {
 		font-size: 16px;
 	}
@@ -37,23 +39,21 @@ body {
 		left: calc(50% - 360px);
 		width: 720px;
 		height: 240px;
-		background: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(color(orange, 500), 0.2) 0%,
-			rgba(color(orange, 500), 0) 100%
-		);
+		background: radial-gradient(50% 50% at 50% 50%,
+				rgba(color(orange, 500), 0.2) 0%,
+				rgba(color(orange, 500), 0) 100%);
+
 		@media (prefers-color-scheme: dark) {
-			background: radial-gradient(
-				50% 50% at 50% 50%,
-				rgba(255, 255, 255, 0.06) 0%,
-				rgba(255, 255, 255, 0) 100%
-			);
+			background: radial-gradient(50% 50% at 50% 50%,
+					rgba(255, 255, 255, 0.06) 0%,
+					rgba(255, 255, 255, 0) 100%);
 		}
 	}
 }
 
 ::selection {
 	background: color(orange, 200);
+
 	@media (prefers-color-scheme: dark) {
 		background: color(orange, 600);
 	}
@@ -62,9 +62,11 @@ body {
 a,
 a:visited {
 	color: color(orange, 600);
+
 	@media (prefers-color-scheme: dark) {
 		color: color(orange, 300);
 	}
+
 	transition: 0.1s ease;
 
 	&:hover {
@@ -76,6 +78,7 @@ hr {
 	margin: 1em 0;
 	border: 0;
 	border-bottom: 1px solid color(gray, 100);
+
 	@media (prefers-color-scheme: dark) {
 		border-color: color(gray, 900);
 	}
@@ -90,6 +93,7 @@ nav {
 
 	a {
 		transition: 0.1s ease;
+
 		&:hover {
 			opacity: 0.6;
 		}
@@ -98,14 +102,17 @@ nav {
 	#site_title {
 		margin: 0;
 	}
+
 	#site_title a {
 		display: flex;
 		align-items: center;
 		gap: 10px;
 		color: color(gray, 950);
+
 		@media (prefers-color-scheme: dark) {
 			color: $white;
 		}
+
 		font-size: 16px;
 		font-weight: 700;
 		letter-spacing: 2px;
@@ -113,9 +120,11 @@ nav {
 		text-decoration: none;
 		text-transform: uppercase;
 	}
+
 	.links a {
 		margin-left: 1em;
 		color: color(gray, 800);
+
 		@media (prefers-color-scheme: dark) {
 			color: color(gray, 200);
 		}
@@ -123,6 +132,7 @@ nav {
 }
 
 .content {
+
 	ol,
 	ul {
 		padding-left: 2em;
@@ -153,6 +163,7 @@ nav {
 
 .page_title {
 	margin: 1.5em 0;
+
 	@media (max-width: $tablet) {
 		margin: 0.5em 0;
 	}
@@ -166,6 +177,7 @@ nav {
 .post {
 	display: flex;
 	width: 100%;
+
 	@media (max-width: $tablet) {
 		flex-flow: column;
 	}
@@ -178,12 +190,15 @@ nav {
 
 .version_wrapper {
 	flex-basis: 260px;
+
 	@media (max-width: $container) {
 		flex-basis: 140px;
 	}
+
 	flex-grow: 0;
 	flex-shrink: 0;
 	margin: 4.5em 0 0 0;
+
 	@media (max-width: $tablet) {
 		flex-basis: 0;
 		margin-top: 2em;
@@ -192,6 +207,7 @@ nav {
 	.version_info {
 		position: sticky;
 		top: 1em;
+
 		@media (max-width: $tablet) {
 			position: relative;
 			top: 0;
@@ -217,26 +233,28 @@ nav {
 	margin-bottom: 8px;
 	padding: 4px 12px;
 	color: $white;
-	background: linear-gradient(
-		25deg,
-		color(purple, 800),
-		color(purple, 700),
-		mix(color(purple, 500), color(orange, 500)),
-		color(orange, 500)
-	);
+	background: linear-gradient(25deg,
+			color(purple, 800),
+			color(purple, 700),
+			mix(color(purple, 500), color(orange, 500)),
+			color(orange, 500));
 	border-radius: 8px;
 }
 
 .date {
 	clear: both;
+
 	@media (max-width: $tablet) {
 		display: inline;
 		margin-left: 1em;
 	}
+
 	color: color(gray, 800);
+
 	@media (prefers-color-scheme: dark) {
 		color: color(gray, 200);
 	}
+
 	font-family: $codeFont;
 	font-size: $fontSizeSmall;
 }
@@ -244,22 +262,28 @@ nav {
 .content {
 	margin: 0;
 	padding: 4em 0;
+
 	@media (max-width: $tablet) {
 		margin: 1em 0;
 		padding: 0 0 2em 0;
 	}
+
 	border-bottom: 1px solid color(gray, 100);
+
 	@media (prefers-color-scheme: dark) {
 		border-color: color(gray, 900);
 	}
+
 	*:first-child {
 		margin-top: 0;
 	}
+
 	img {
 		max-width: 100%;
 		height: auto;
 		border-radius: 12px;
 		border: 1px solid color(gray, 200);
+
 		@media (prefers-color-scheme: dark) {
 			border-color: color(gray, 800);
 		}
@@ -269,12 +293,15 @@ nav {
 footer {
 	display: flex;
 	padding: 2em 0;
+
 	@media (max-width: $tablet) {
 		padding: 1em 0;
 	}
+
 	color: color(gray, 500);
 	justify-content: space-between;
 	border-top: 1px solid color(gray, 100);
+
 	@media (prefers-color-scheme: dark) {
 		border-color: color(gray, 900);
 	}
@@ -283,6 +310,7 @@ footer {
 		margin-left: 1em;
 		color: color(gray, 500);
 		text-decoration: none;
+
 		&:hover {
 			color: color(gray, 500);
 			opacity: 0.6;
